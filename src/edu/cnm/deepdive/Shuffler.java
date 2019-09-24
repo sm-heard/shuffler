@@ -6,10 +6,18 @@ public class Shuffler {
 
   private final Random rng;
 
+  /**
+   * Randomly shuffles
+   * @param rng
+   */
   public Shuffler(Random rng) {
     this.rng = rng;
   }
 
+  /**
+   * randomly shuffles
+   * @param data
+   */
   public void shuffle(int[] data){
     for (int dest = data.length - 1; dest > 0; dest--){
       int source = rng.nextInt(dest + 1);
@@ -20,6 +28,10 @@ public class Shuffler {
     }
   }
 
+  /**
+   * randomly shuffles
+   * @param data
+   */
   public void shuffle(short[] data){
     for (int dest = data.length - 1; dest > 0; dest--){
       int source = rng.nextInt(dest + 1);
@@ -30,6 +42,10 @@ public class Shuffler {
     }
   }
 
+  /**
+   * randomly shuffles
+   * @param data
+   */
   public void shuffle(long[] data){
     for (int dest = data.length - 1; dest > 0; dest--){
       int source = rng.nextInt(dest + 1);
@@ -40,6 +56,10 @@ public class Shuffler {
     }
   }
 
+  /**
+   * randomly shuffles
+   * @param data
+   */
   public void shuffle(char[] data){
     for (int dest = data.length - 1; dest > 0; dest--){
       int source = rng.nextInt(dest + 1);
@@ -50,6 +70,10 @@ public class Shuffler {
     }
   }
 
+  /**
+   * randomly shuffles
+   * @param data
+   */
   public void shuffle(byte[] data){
     for (int dest = data.length - 1; dest > 0; dest--){
       int source = rng.nextInt(dest + 1);
@@ -60,6 +84,10 @@ public class Shuffler {
     }
   }
 
+  /**
+   * randomly shuffles
+   * @param data
+   */
   public void shuffle(float[] data){
     for (int dest = data.length - 1; dest > 0; dest--){
       int source = rng.nextInt(dest + 1);
@@ -70,6 +98,10 @@ public class Shuffler {
     }
   }
 
+  /**
+   * randomly shuffles
+   * @param data
+   */
   public void shuffle(double[] data){
     for (int dest = data.length - 1; dest > 0; dest--){
       int source = rng.nextInt(dest + 1);
@@ -80,6 +112,11 @@ public class Shuffler {
     }
   }
 
+  /**
+   * randomly shuffles
+   * @param data
+   * @param <T>
+   */
   public <T> void shuffle(T[] data){
     for (int dest = data.length - 1; dest > 0; dest--){
       int source = rng.nextInt(dest + 1);
